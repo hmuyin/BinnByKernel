@@ -9,6 +9,8 @@
 3. 手动实现了内核下用的 realloc ==> ReallocateMemory
 4. 增加内核下需要用到的 _atoi64，atoi，atof 以及 strdup ==> Rt_strdup，stricmp ==> Rt_stricmp，strnicmp ==> Rt_strnicmp 以及替换源文件中的对应函数
 5. 增加源文件中所需要用到的一些定义
+6. 对 size_t 进行了 int 与 char 的强制转换，避免编译器报警告。
+7. 消除了一些编译器的警告。
 
 其他：
 所有增加的函数都在 inplace.c 中实现。
